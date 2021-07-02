@@ -70,3 +70,8 @@ class Lista_ligada():
         removido.proximo = None
         self.__quantidade -= 1
         return removido.conteudo
+
+    def item(self, posição: int):
+        self.__validar_posição(posição)
+        celula = self.__celula(posição)
+        return celula.conteudo
