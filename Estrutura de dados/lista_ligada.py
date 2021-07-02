@@ -51,3 +51,10 @@ class Lista_ligada():
         for pos in range(0, self.quantidade):
             print(f'P{pos} - {atual.conteudo}')
             atual = atual.proximo
+
+    def remover_do_inicio(self):
+        removido = self.inicio
+        self.__inicio = removido.proximo
+        removido.proximo = None
+        self.__quantidade -= 1
+        return removido.conteudo
