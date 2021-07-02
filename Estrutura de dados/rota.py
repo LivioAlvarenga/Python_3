@@ -81,3 +81,8 @@ if __name__ == '__main__':
         f'\n-> Removendo ultimo item da Lista Ligada\n{lista.quantidade = }')
     lista.imprimir()
     print(f'\nRemovido item:\n {removido}')
+
+    # .Retornando item por posição da Lista Ligada
+    lista.inserir(lista.quantidade, loja6)
+    print(
+        f'\n-> Retornando item da posição 0 da Lista Ligada\n{lista.item(0)}')
