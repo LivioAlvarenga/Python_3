@@ -67,3 +67,17 @@ if __name__ == '__main__':
         f'\n-> Removendo primeiro item da Lista Ligada\n{lista.quantidade = }')
     lista.imprimir()
     print(f'\nRemovido item:\n {removido}')
+
+    # .Removendo terceiro item da Lista Ligada
+    removido = lista.remover(2)
+    print(
+        f'\n-> Removendo terceiro item da Lista Ligada\n{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
+
+    # .Removendo ultimo item da Lista Ligada
+    removido = lista.remover(lista.quantidade - 1)
+    print(
+        f'\n-> Removendo ultimo item da Lista Ligada\n{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
