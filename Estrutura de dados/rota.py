@@ -21,3 +21,18 @@ if __name__ == '__main__':
     # .Criando lista Ligada
     lista = Lista_ligada()
     print(f'\n{lista.quantidade = }')
+
+    # .Inserindo 1ª Loja na Lista Ligada
+    lista.inserir_no_inicio(loja1)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 2ª Loja na Lista Ligada
+    lista.inserir_no_inicio(loja2)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 3ª Loja na Lista Ligada
+    lista.inserir_no_inicio(loja3)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
