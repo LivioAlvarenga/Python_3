@@ -86,3 +86,33 @@ if __name__ == '__main__':
     lista.inserir(lista.quantidade, loja6)
     print(
         f'\n-> Retornando item da posição 0 da Lista Ligada\n{lista.item(0)}')
+
+# ! Observações:
+# Os vetores são eficientes para recuperar dados porque usam índices, que
+#  representam sua posição física na memória. Mas não são eficientes para
+#  alterações (inserção e remoção) porque para manter cada elemento do vetor
+#  na sequência correta tem que ser feitos várias atribuições e isso é custoso,
+#  especialmente no início, pois isso significa trocar o valor de todos os
+#  elementos do vetor. A inserção e remoção em si, depois de ter localizado
+#  onde será feita a alteração não é custoso. No entanto, localizar e/ou
+#  recuperar um elemento é mais custoso, pois no pior caso é percorrer a lista
+#  inteira, para chegar ao último item. Em comparação, use vetores para lidar
+#  com listas estatísticas e use listas ligadas quando há necessidade de
+#  muitas alterações em posições aleatórias, ou seja, em listas dinâmicas.
+
+# Implementamos a Lista Ligada para funcionar como vetores, ou seja, para
+#  recuperar os elementos por meio de índices (posições). As estruturas de
+#  dados foram evoluindo por meio das demandas.
+
+# Se você precisa ter uma lista ordenada ou precisar recuperar os elementos
+#  pelo seu conteúdo, é possível ampliar as funcionalidades da lista para
+#  atender outros casos de uso.
+
+# Para isso você precisaria fazer novas implementações, criar novos atributos
+#  para que fosse possível fazer inserção, remoção, localização da célula pelo
+#  conteúdo e recuperação da posição pelo conteúdo.
+
+# A estrutura de dados que implementa os mesmos atributos de Lista Ligada e
+#  dos atributos mencionados acima é list que faz parte da biblioteca padrão
+#  do Python. O desempenho de list é o mesmo de vetor: operações mais custosas
+#  no início.
