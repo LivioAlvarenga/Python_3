@@ -23,34 +23,47 @@ if __name__ == '__main__':
 
     # .Criando lista Ligada
     lista = Lista_ligada()
-    print(f'\n{lista.quantidade = }')
+    print(f'\n-> Criando lista Ligada\n{lista.quantidade = }')
 
     # .Inserindo 1ª Loja na Lista Ligada
     lista.inserir_no_inicio(loja1)
-    print(f'\n{lista.quantidade = }')
+    print(f'\n-> Inserindo 1ª Loja na Lista Ligada\n{lista.quantidade = }')
     lista.imprimir()
 
     # .Inserindo 2ª Loja na Lista Ligada
     lista.inserir_no_inicio(loja2)
-    print(f'\n{lista.quantidade = }')
+    print(f'\n-> Inserindo 2ª Loja na Lista Ligada\n{lista.quantidade = }')
     lista.imprimir()
 
     # .Inserindo 3ª Loja na Lista Ligada
     lista.inserir_no_inicio(loja3)
-    print(f'\n{lista.quantidade = }')
+    print(f'\n-> Inserindo 3ª Loja na Lista Ligada\n{lista.quantidade = }')
     lista.imprimir()
 
     # .Inserindo 4ª Loja na Lista Ligada na posição 1
     lista.inserir(1, loja4)
-    print(f'\n{lista.quantidade = }')
+    print(
+        f'\n-> Inserindo 4ª Loja na Lista Ligada na posição 1\n\
+{lista.quantidade = }')
     lista.imprimir()
 
     # .Inserindo 5ª Loja na Lista Ligada na posição 0
     lista.inserir(0, loja5)
-    print(f'\n{lista.quantidade = }')
+    print(
+        f'\n-> Inserindo 5ª Loja na Lista Ligada na posição 0\n\
+{lista.quantidade = }')
     lista.imprimir()
 
     # .Inserindo 6ª Loja na Lista Ligada na ultima posição
     lista.inserir(lista.quantidade, loja6)
-    print(f'\n{lista.quantidade = }')
+    print(
+        f'\n-> Inserindo 6ª Loja na Lista Ligada na ultima posição\n\
+{lista.quantidade = }')
     lista.imprimir()
+
+    # .Removendo primeiro item da Lista Ligada
+    removido = lista.remover_do_inicio()
+    print(
+        f'\n-> Removendo primeiro item da Lista Ligada\n{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
