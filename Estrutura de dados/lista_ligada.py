@@ -44,6 +44,7 @@ class Lista_ligada():
     def __validar_posição(self, posição: int):
         if 0 <= posição < self.quantidade:
             return True
+
         raise IndexError(f'Posição inválida {posição}')
 
     def imprimir(self):
@@ -55,6 +56,17 @@ class Lista_ligada():
     def remover_do_inicio(self):
         removido = self.inicio
         self.__inicio = removido.proximo
+        removido.proximo = None
+        self.__quantidade -= 1
+        return removido.conteudo
+
+    def remover(self, posição: int):
+        if posição == 0:
+            return self.remover_do_inicio()
+
+        esquerda = self.__celula(posição - 1)
+        removido = esquerda.proximo
+        esquerda.proximo = removido.proximo
         removido.proximo = None
         self.__quantidade -= 1
         return removido.conteudo
