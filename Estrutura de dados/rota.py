@@ -17,6 +17,9 @@ if __name__ == '__main__':
     loja1 = Loja("Mercadinho", "Rua das Laranjeiras, 12")
     loja2 = Loja("Hortifrúti", "Rua do Pomar, 300")
     loja3 = Loja("Padaria", "Rua das Flores, 600")
+    loja4 = Loja("Supermercado", "Rua João XX, 100")
+    loja5 = Loja("Hipermercado", "Rua João XXI, 1000")
+    loja6 = Loja("Epa", "Av Papa João Paulo II, 23")
 
     # .Criando lista Ligada
     lista = Lista_ligada()
@@ -34,5 +37,20 @@ if __name__ == '__main__':
 
     # .Inserindo 3ª Loja na Lista Ligada
     lista.inserir_no_inicio(loja3)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 4ª Loja na Lista Ligada na posição 1
+    lista.inserir(1, loja4)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 5ª Loja na Lista Ligada na posição 0
+    lista.inserir(0, loja5)
+    print(f'\n{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 6ª Loja na Lista Ligada na ultima posição
+    lista.inserir(lista.quantidade, loja6)
     print(f'\n{lista.quantidade = }')
     lista.imprimir()
