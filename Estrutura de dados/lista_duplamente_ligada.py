@@ -40,6 +40,16 @@ class Lista_duplamente_ligada():
         self.__inicio = celula
         self.__quantidade += 1
 
+    def inserir_no_fim(self, conteudo):
+        if self.quantidade == 0:
+            return self.__inserir_em_lista_vazia(conteudo)
+
+        celula = Celula(conteudo)
+        celula.anterior = self.fim
+        self.__fim.proximo = celula
+        self.__fim = celula
+        self.__quantidade += 1
+
     def item(self, posição: int):
         celula = self.__celula(posição)
         return celula.conteudo
