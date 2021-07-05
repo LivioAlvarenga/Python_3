@@ -24,10 +24,20 @@ class Lista_duplamente_ligada():
     def quantidade(self) -> int:
         return self.__quantidade
 
-    def inserir_em_lista_vazia(self, conteudo) -> None:
+    def __inserir_em_lista_vazia(self, conteudo) -> None:
         celula = Celula(conteudo)
         self.__inicio = celula
         self.__fim = celula
+        self.__quantidade += 1
+
+    def inserir_no_inicio(self, conteudo):
+        if self.quantidade == 0:
+            return self.__inserir_em_lista_vazia(conteudo)
+
+        celula = Celula(conteudo)
+        celula.proximo = self.inicio
+        self.__inicio.anterior = celula
+        self.__inicio = celula
         self.__quantidade += 1
 
     def item(self, posição: int):
@@ -46,3 +56,9 @@ class Lista_duplamente_ligada():
         for i in range(0, posição):
             atual = atual.proximo
         return atual
+
+    def imprimir(self):
+        atual = self.inicio
+        for pos in range(0, self.quantidade):
+            print(f'P{pos} - {atual.conteudo}')
+            atual = atual.proximo
