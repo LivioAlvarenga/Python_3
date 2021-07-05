@@ -45,10 +45,10 @@ if __name__ == '__main__':
 {lista.quantidade = }')
     lista.imprimir()
 
-    # .Inserindo 3ª Loja na Lista Duplamente Ligada
+    # .Inserindo 3ª Loja no início da Lista Duplamente Ligada
     lista.inserir_no_inicio(loja3)
     print(
-        f'\n-> Inserindo 3ª Loja na Lista Duplamente Ligada\n\
+        f'\n-> Inserindo 3ª Loja no início da Lista Duplamente Ligada\n\
 {lista.quantidade = }')
     lista.imprimir()
 
@@ -56,5 +56,19 @@ if __name__ == '__main__':
     lista.inserir_no_fim(loja4)
     print(
         f'\n-> Inserindo 4ª Loja no fim da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 5ª Loja  na posição 2 da Lista Duplamente Ligada
+    lista.inserir(2, loja5)
+    print(
+        f'\n-> Inserindo 5ª Loja  na posição 2 da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 6ª Loja  na posição 4 da Lista Duplamente Ligada
+    lista.inserir(3, loja6)
+    print(
+        f'\n-> Inserindo 6ª Loja  na posição 4 da Lista Duplamente Ligada\n\
 {lista.quantidade = }')
     lista.imprimir()
