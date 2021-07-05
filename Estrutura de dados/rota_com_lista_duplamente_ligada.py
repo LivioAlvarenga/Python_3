@@ -72,3 +72,19 @@ if __name__ == '__main__':
         f'\n-> Inserindo 6ª Loja  na posição 4 da Lista Duplamente Ligada\n\
 {lista.quantidade = }')
     lista.imprimir()
+
+    # .Removendo primeiro item da Lista Duplamente Ligada
+    removido = lista.remover_do_inicio()
+    print(
+        f'\n-> Removendo primeiro item da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
+
+    # .Removendo ultimo item da Lista Duplamente Ligada
+    removido = lista.remover_do_fim()
+    print(
+        f'\n-> Removendo ultimo item da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
