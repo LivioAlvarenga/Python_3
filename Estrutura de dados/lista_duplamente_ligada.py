@@ -94,3 +94,33 @@ class Lista_duplamente_ligada():
         for pos in range(0, self.__quantidade):
             print(f'P{pos} - {atual.conteudo}')
             atual = atual.proximo
+
+    def __remover_ultimo(self):
+        if self.__quantidade == 1:
+            removido = self.__inicio
+            self.__inicio = None
+            self.__fim = None
+            self.__quantidade -= 1
+            return removido.conteudo
+
+    def remover_do_inicio(self):
+        if self.__quantidade == 1:
+            return self.__remover_ultimo()
+        else:
+            removido = self.__inicio
+            self.__inicio = removido.proximo
+            self.__inicio.anterior = None
+            removido.proximo = None
+            self.__quantidade -= 1
+            return removido.conteudo
+
+    def remover_do_fim(self):
+        if self.__quantidade == 1:
+            return self.__remover_ultimo()
+        else:
+            removido = self.__fim
+            self.__fim = removido.anterior
+            self.__fim.proximo = None
+            removido.anterior = None
+            self.__quantidade -= 1
+            return removido.conteudo
