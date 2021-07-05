@@ -27,12 +27,27 @@ if __name__ == '__main__':
     print(f'\n-> Criando lista Ligada\n{lista.quantidade = }')
 
     # .Inserindo 1ª Loja na Lista Duplamente Ligada vazia
-    lista.inserir_em_lista_vazia(loja1)
+    lista.inserir_no_inicio(loja1)
     print(
         f'\n-> Inserindo 1ª Loja na Lista Duplamente Ligada Vazia\n\
 {lista.quantidade = }')
+    lista.imprimir()
 
     # .Retornando item por posição da Lista Duplamente Ligada
     print(
         f'\n-> Retornando item da posição 0 da Lista Duplamente Ligada\n\
 {lista.item(0)}')
+
+    # .Inserindo 2ª Loja na Lista Duplamente Ligada
+    lista.inserir_no_inicio(loja2)
+    print(
+        f'\n-> Inserindo 2ª Loja na Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+
+    # .Inserindo 3ª Loja na Lista Duplamente Ligada
+    lista.inserir_no_inicio(loja3)
+    print(
+        f'\n-> Inserindo 3ª Loja na Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
