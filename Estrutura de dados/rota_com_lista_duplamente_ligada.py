@@ -88,3 +88,39 @@ if __name__ == '__main__':
 {lista.quantidade = }')
     lista.imprimir()
     print(f'\nRemovido item:\n {removido}')
+
+    # .Removendo item 2 da Lista Duplamente Ligada
+    removido = lista.remover(1)
+    print(
+        f'\n-> Removendo item 2 da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
+    print(f'\nRemovido item:\n {removido}')
+
+# ! Observações:
+# Vimos que a Lista Ligada é menos eficiente para fazer operações no fim da
+#  lista, pois antes de executar qualquer operação, é necessário percorrê-la.
+#  A Lista Duplamente Ligada é mais eficiente que a Lista Ligada. A Lista
+#  Duplamente Ligada pode ser percorrida em dois sentidos e, antes de
+#  percorrê-los, calculamos o menor percurso para que seja menos custoso.
+
+# ! from collections import deque
+# A estrutura de dados deque faz parte da biblioteca padrão do python e
+#  corresponde à lista duplamente ligada, pois também é otimizado para
+#  inserção e remoção dos itens nas extremidades.
+# Seus atributos são:
+#  append - corresponde a inserir no fim
+#  appendleft - corresponde a inserir no início
+#  clear
+#  copy
+#  count - corresponde a quantidade
+#  extend
+#  extendleft
+#  index
+#  insert - corresponde a inserir em uma dada posição
+#  maxlen
+#  pop - remover do fim
+#  popleft - remover do início
+#  remove - remover de qualquer posição
+#  reverse
+#  rotate
