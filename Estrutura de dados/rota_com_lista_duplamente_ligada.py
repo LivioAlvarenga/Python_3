@@ -51,3 +51,10 @@ if __name__ == '__main__':
         f'\n-> Inserindo 3ª Loja na Lista Duplamente Ligada\n\
 {lista.quantidade = }')
     lista.imprimir()
+
+    # .Inserindo 4ª Loja no fim da Lista Duplamente Ligada
+    lista.inserir_no_fim(loja4)
+    print(
+        f'\n-> Inserindo 4ª Loja no fim da Lista Duplamente Ligada\n\
+{lista.quantidade = }')
+    lista.imprimir()
