@@ -36,3 +36,13 @@ if __name__ == '__main__':
     livraria.inserir_modo('Culinária Brasileira', 'Feijoada')
     livraria.inserir_modo('Gastronomia', 'Culinária Japonesa')
     livraria.imprimir()
+
+    # .Removendo filhos
+    removido = livraria.remover_nodo('Feijoada')
+    print(f'\n{removido = }\n')
+    livraria.imprimir()
+
+    # .Removendo um Nodo inteiro
+    removido = livraria.remover_nodo('Informática')
+    print(f'\n{removido = }\n')
+    livraria.imprimir()
