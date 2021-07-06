@@ -11,12 +11,23 @@ class Lista_de_nodos(Lista_duplamente_ligada):
             atual.conteudo.imprimir(nível)
             atual = atual.proximo
 
+    def localizar_nodo(self, conteudo):
+        atual = self.inicio
+        for i in range(0, self.quantidade):
+            encontrado = atual.conteudo.localizar_nodo(conteudo)
+            if encontrado:
+                return encontrado
+            atual = atual.proximo
+
 
 class Nodo():
     def __init__(self, conteudo) -> None:
         self.conteudo = conteudo
         self.pai = None
         self.filhos = None
+
+    def __repr__(self) -> str:
+        return self.conteudo
 
     def imprimir(self, nível=0):
         print(f'{" "*nível}- {self.conteudo}')
@@ -29,6 +40,12 @@ class Nodo():
         nodo = Nodo(filho)
         self.filhos.inserir_no_fim(nodo)
 
+    def localizar_nodo(self, conteudo):
+        if conteudo == self.conteudo:
+            return self
+        if self.filhos:
+            return self.filhos.localizar_nodo(conteudo)
+
 
 class Arvore():
     def __init__(self, conteudo) -> None:
@@ -36,3 +53,11 @@ class Arvore():
 
     def imprimir(self):
         self.raiz.imprimir()
+
+    def localizar_nodo(self, conteudo):
+        return self.raiz.localizar_nodo(conteudo)
+
+    def inserir_modo(self, pai, filho):
+        nodo_pai = self.localizar_nodo(pai)
+        if nodo_pai:
+            nodo_pai.inserir_filhos(filho)
