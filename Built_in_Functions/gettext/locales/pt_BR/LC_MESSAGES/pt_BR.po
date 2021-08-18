@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-08-18 13:42-0300\n"
+"PO-Revision-Date: 2021-08-18 13:47-0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#: main_1.py:28
+msgid "Oi, este é um tutorial do uso de gettext"
+msgstr ""
+
+#: main_1.py:30
+msgid "Vamos traduzir este texto para inglês."
+msgstr ""
+
+#: main_2.py:26
+msgid "Vamos traduzir este texto para inglês, testando em dois arquivos.py"
+msgstr ""
+
+#: main_2.py:29
+msgid "Ola mundo!"
+msgstr ""
