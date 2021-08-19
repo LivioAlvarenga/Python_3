@@ -18,7 +18,7 @@ def set_language(lang: str, path: str = 'locales'):
         path (str, optional): Path arquivos de tradução. Defaults to 'locales'.
 
     Returns:
-        gettex.translation: Instancia de gettext.translation
+        gettex.translation: Instancia de gettext.translation.gettext
     """
     lan_gettext = translation(
         lang,
@@ -28,7 +28,7 @@ def set_language(lang: str, path: str = 'locales'):
     )
     lan_gettext.install()
 
-    return lan_gettext
+    return lan_gettext.gettext
 
 
 '''
