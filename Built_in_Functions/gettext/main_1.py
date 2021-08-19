@@ -14,6 +14,9 @@ def print_some_strings():
 
 if __name__ == '__main__':
     print_some_strings()
+    _ = set_language('pt_BR').gettext
+    print_some_strings()
+
 
 # para criar arquivo base.pot usando o pygettext
 # python C:\Users\Avell\AppData\Local\Programs\Python\Python39\Tools\i18n\/
