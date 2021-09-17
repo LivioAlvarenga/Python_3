@@ -1,0 +1,20 @@
+{
+    "permissões": {
+        "1": {"nome": "Desenvolvedor", "descrição": "Tem acesso full ao sistema"},
+        "2": {"nome": "Administrador Master", "descrição": "Tem acesso full as funcionalidades do sistema e não pode ser apagado"},
+        "3": {"nome": "Administrador", "descrição": "Tem acesso full as funcionalidades do sistema e pode ser apagado"},
+        "4": {"nome": "Escrita", "descrição": "Tem acesso para inserção de dados no sistema e pode se bloquear telas do mesmo"},
+        "5": {"nome": "Leitura", "descrição": "Tem acesso para leitura de dados no sistema e pode se bloquear telas do mesmo"}
+    },
+    "bloqueio_tela": {
+        "2": {"tela_bloqueadas": []},
+        "3": {"tela_bloqueadas": []},
+        "4": {"tela_bloqueadas": []},
+        "5": {"tela_bloqueadas": []}
+    },
+    "telas": {},
+    "menu_config": {
+        "0": [{"icon_left": "account", "texto": "_users", "icon_right": "chevron-right", "status_icon_right": "True", "func_icon_right": "config_user", "cor": "False"},
+             {"icon_left": "tools", "texto": "_project",  "icon_right": "chevron-right", "status_icon_right": "True", "func_icon_right": "config_project", "cor": "False"}]
+    }
+}
