@@ -3,7 +3,7 @@ from arvore import Arvore
 # .Testando o código.
 if __name__ == '__main__':
 
-    # .Instanciando pedidos
+    """# .Instanciando pedidos
     livraria = Arvore('Livros')
     livraria.imprimir()
 
@@ -45,4 +45,37 @@ if __name__ == '__main__':
     # .Removendo um Nodo inteiro
     removido = livraria.remover_nodo('Informática')
     print(f'\n{removido = }\n')
-    livraria.imprimir()
+    livraria.imprimir()"""
+
+    """
+    screen
+        MDBoxLayout1
+            TopToolbar
+            box_sem_scroll_ver
+            ScrollView
+                box_scroll_ver
+                    BoxCard
+                        CardOne1
+                        CardOne2
+                        CardOne3
+                        CardOne4
+                        CardOne5
+                        CardOne6
+    """
+    screen = Arvore('screen')
+    screen.imprimir()
+    screen.inserir_modo('screen', 'MDBoxLayout1')
+    screen.inserir_modo('screen', 'MDBoxLayout1')
+    screen.inserir_modo('MDBoxLayout1', 'TopToolbar')
+    screen.inserir_modo('MDBoxLayout1', 'box_sem_scroll_ver')
+    screen.inserir_modo('MDBoxLayout1', 'ScrollView')
+    screen.inserir_modo('ScrollView', 'box_scroll_ver')
+    screen.inserir_modo('box_scroll_ver', 'BoxCard')
+    screen.inserir_modo('BoxCard', 'CardOne1')
+    screen.inserir_modo('BoxCard', 'CardOne2')
+    screen.inserir_modo('BoxCard', 'CardOne3')
+    screen.inserir_modo('BoxCard', 'CardOne4')
+    screen.inserir_modo('BoxCard', 'CardOne5')
+    screen.imprimir()
+    pesquisa = screen.localizar_nodo('CardOne1')
+    print(f'\n{pesquisa = }')
